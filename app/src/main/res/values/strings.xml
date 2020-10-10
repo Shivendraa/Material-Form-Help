@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialPractice</string>
+    <string name="hint">hint</string>
+    <string name="uname">eg. your name</string>
+    <string name="click_to_get_menu">click to get menu</string>
+    <string name="submit">Submit</string>
+</resources>
