@@ -29,11 +29,13 @@ public class NextActivity extends AppCompatActivity {
             name.setText(bundle.getString("name"));
             number.setText(bundle.getString("number"));
             dropdownval.setText(bundle.getString("dropdown"));
-            dateval.setText(bundle.getString("date"));
+            dateval.setText(bundle.getString("date")+"\n"+bundle.getString("radioChoice"));
             byte[] imgBytes = bundle.getByteArray("imageBytes");
             assert imgBytes != null;
-            Bitmap bitmap = BitmapFactory.decodeByteArray(imgBytes, 0, imgBytes.length);
-            imageView.setImageBitmap(bitmap);
+            if(imgBytes.length > 0) {
+                Bitmap bitmap = BitmapFactory.decodeByteArray(imgBytes, 0, imgBytes.length);
+                imageView.setImageBitmap(bitmap);
+            }
         }
     }
 }
